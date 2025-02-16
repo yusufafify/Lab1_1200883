@@ -63,6 +63,8 @@ async function createEmployee() {
       }),
     });
     const data = await response.json();
+    document.getElementById("name").value = "";
+    document.getElementById("id").value = "";
     console.log(data);
   } catch (error) {
     console.log(error);
